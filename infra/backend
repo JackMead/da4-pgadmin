@@ -1,0 +1,4 @@
+resource_group_name  = "Delivery_Management"
+storage_account_name = "academyterraformstate"
+container_name       = "da4-pgadmin"
+key                  = "terraform.tfstate"
