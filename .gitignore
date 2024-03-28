@@ -1,2 +1,5 @@
 terraform.tfvars
 .terraform
+
+*.ignore
+.venv

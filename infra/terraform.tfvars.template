@@ -1,0 +1,5 @@
+resource_group = "<FILL THIS IN>"
+app_service_name = "<FILL THIS IN>"
+storage_account_name = "<FILL THIS IN>"
+default_admin_email = "<FILL THIS IN>"
+default_admin_password = "<FILL THIS IN>"
