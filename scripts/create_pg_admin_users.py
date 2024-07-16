@@ -38,9 +38,9 @@ def run(playwright: Playwright) -> None:
 
 def add_user(page, username, user_password):
     page.locator("[data-test=\"add-row\"]").click()
-    page.locator("div:nth-child(4) > .MuiInputBase-root > .MuiInputBase-input").first.fill(username)
-    page.locator("div:nth-child(7) > .MuiInputBase-root > .MuiInputBase-input").first.fill(user_password)
-    page.locator("div:nth-child(8) > .MuiInputBase-root > .MuiInputBase-input").first.fill(user_password)
+    page.locator("input[name=\"email\"]").first.fill(username)
+    page.locator("input[name=\"newPassword\"]").first.fill(user_password)
+    page.locator("input[name=\"confirmPassword\"]").first.fill(user_password)
 
 with sync_playwright() as playwright:
     run(playwright)
